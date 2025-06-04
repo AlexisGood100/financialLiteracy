@@ -12,13 +12,23 @@
     }
     .tool-card {
       border-radius: 12px;
-      padding: 20px;
+      padding: 0;
+      overflow: hidden;
       margin-bottom: 20px;
       background: white;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       height: 100%;
+      border:black 2px solid;
     }
-    .tool-card h5 {
+    .tool-card img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    .tool-card-body {
+      padding: 20px;
+    }
+    .tool-card-body h5 {
       margin-bottom: 10px;
     }
   </style>
@@ -30,25 +40,34 @@
 
       <div class="col-md-4">
         <div class="tool-card">
-          <h5>Annuity Calculator</h5>
-          <p>Calculate interest on savings.</p>
-          <a href="https://annuityCalculator.asyncprogramming.com" target="_blank" class="btn btn-primary">Open Tool</a>
+          <img src="./img1.jpg" alt="Annuity Calculator Tool">
+          <div class="tool-card-body">
+            <h5>Annuity Calculator</h5>
+            <p>Calculate interest on savings.</p>
+            <a href="https://annuityCalculator.asyncprogramming.com" target="_blank" class="btn btn-primary">Open Tool</a>
+          </div>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="tool-card">
-          <h5>Balance Sheet</h5>
-          <p>Calculate the future value of recurring payments over time.</p>
-          <a href="https://balancesheetjs.asyncprogramming.com" target="_blank" class="btn btn-primary">Open Tool</a>
+          <img src="./img2.jpg" alt="Balance Sheet Tool">
+          <div class="tool-card-body">
+            <h5>Balance Sheet</h5>
+            <p>Calculate the future value of recurring payments over time.</p>
+            <a href="https://balancesheetjs.asyncprogramming.com" target="_blank" class="btn btn-primary">Open Tool</a>
+          </div>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="tool-card">
-          <h5>Paycheck Tax Estimator</h5>
-          <p>Estimate your monthly expenses and plan savings.</p>
-          <a href="https://taxplanningjs.asyncprogramming.com" target="_blank" class="btn btn-primary">Open Tool</a>
+          <img src="./img3.jpg" alt="Tax Planning Tool">
+          <div class="tool-card-body">
+            <h5>Paycheck Tax Estimator</h5>
+            <p>Estimate your monthly expenses and plan savings.</p>
+            <a href="https://taxplanningjs.asyncprogramming.com" target="_blank" class="btn btn-primary">Open Tool</a>
+          </div>
         </div>
       </div>
 
